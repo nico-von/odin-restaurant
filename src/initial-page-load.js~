@@ -1,0 +1,17 @@
+function initialPageLoad() {
+	const titleDiv = document.createElement("div");
+	const descriptionDiv = document.createElement("div");
+	const hoursDiv = document.createElement("div");
+	const locDiv = document.createElement("div");
+
+	const title = document.createElement("h1");
+	title.textContent = "Grazie Caffe";
+	
+	titleDiv.appendChild(title);
+		console.log(titleDiv);
+	document.body.append(titleDiv, descriptionDiv, hoursDiv, locDiv);
+}
+
+export {
+		initialPageLoad,
+}

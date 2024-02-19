@@ -1,0 +1,11 @@
+export function createElem(elem = "div", className = [], parentElem = null){
+		const newElem = document.createElement(elem);
+		newElem.classList.add(...className);
+
+		if (!parentElem) {
+				return newElem;
+		}
+
+		parentElem.appendChild(newElem);
+		return newElem;
+}
