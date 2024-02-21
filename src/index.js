@@ -2,6 +2,8 @@ import Home from "./Home.js";
 import Menu from "./Menu.js";
 import About from "./About.js";
 
+import './styles/style.css';
+
 import { resetContent } from "./Functions.js";
 import { homeButton, menuButton, aboutButton } from "./Content.js";
 

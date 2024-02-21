@@ -1,0 +1,32 @@
+:root {
+		box-sizing: border-box;
+}
+
+
+header {
+		display: flex;
+		justify-content: center;
+}
+#content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+}
+button {
+		border: none;
+		border-radius: 5rem;
+		background: none;
+		color: red;
+		padding: 0.5rem 1.5rem;
+}
+
+button:hover {
+		text-decoration: underline;
+		font-size: 1.1rem;
+		cursor: pointer;
+}
+
+.title {
+		color: red;
+}
