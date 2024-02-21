@@ -1,6 +1,10 @@
-export function createElem(elem = "div", className = [], parentElem = null){
+import { content } from "./Content.js";
+
+export function createElem(elem = "div", classNames = [], parentElem = null){
 		const newElem = document.createElement(elem);
-		newElem.classList.add(...className);
+		if (classNames.length != 0){
+				newElem.classList.add(...classNames);
+		}
 
 		if (!parentElem) {
 				return newElem;
@@ -9,3 +13,4 @@ export function createElem(elem = "div", className = [], parentElem = null){
 		parentElem.appendChild(newElem);
 		return newElem;
 }
+

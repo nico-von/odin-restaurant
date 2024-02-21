@@ -1,5 +1,5 @@
-import content from "./Content.js";
-import hours from "./Hours.js";
+import { content } from "./Content.js";
+import hours from "./objects/Hours.js";
 import { createElem } from "./Functions.js";
 
 export default function(){

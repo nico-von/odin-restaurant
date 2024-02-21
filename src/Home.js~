@@ -1,4 +1,4 @@
-import content from "./Content.js";
+import { content } from "./Content.js";
 import hours from "./Hours.js";
 import { createElem } from "./Functions.js";
 
@@ -13,6 +13,8 @@ export default function(){
 
 		const hoursDiv = createElem("div",["hours-div"], content);
 		const hoursTitle = createElem("h2", ["subtitle"], hoursDiv);
+		hoursTitle.textContent = "Hours";
+
 		const hoursList = createElem("ol", ["hours-list"], hoursDiv);
 		
 		for(let hour in hours){
@@ -22,5 +24,7 @@ export default function(){
 
 		const locationDiv = createElem("div", ["location-div"], content);
 		const locationTitle = createElem("h2", ["subtitle"], locationDiv);
+		locationTitle.textContent = "Location";
 		const locationDesc = createElem("p", ["description"], locationDiv);
+		locationDesc.textContent = "123 Due Latte Italia";
 };
