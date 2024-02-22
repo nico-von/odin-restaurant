@@ -1,30 +1,88 @@
-:root {
+:root, * {
 		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
 }
 
-
+#app {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		height: 100vh;
+		width: 100vw;
+}
 header {
 		display: flex;
 		justify-content: center;
+		align-items: center;
+		margin: 1rem;
+}
+
+nav {
+		display: flex;
+		justify-content: center;
+		height: 1.7rem;
+}
+ol {
+		list-style: none;
 }
 #content {
+		text-align: center;
+		width: 100vw;
+}
+.menu {
+		height: 100%;
+		max-height: calc(100%-200px);
+		text-align: center;
+		overflow-y: scroll;
+}
+.title-div{
+		margin: 1rem;
+}
+.title {
+
+		font-size: 4rem;
+}
+.subtitle {
+		color: #FF7F7F;
+		font-size: 2.3rem;
+}
+.menu-container-div{
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		align-items:center;
+}
+.item-title {
+		color: #FFCCCB;
+		padding-bottom: 0.5rem;
+		font-size: 1.5rem;
+}
+
+.item-divider{
+		width: 50%;
+		margin: auto;
+		margin-top: 0.8rem;
+		margin-bottom: 0.5rem;
+}
+
+.item-container-div {
+		padding: 1rem;
+
 }
 button {
+		font-size: 1.2rem;
 		border: none;
-		border-radius: 5rem;
 		background: none;
 		color: red;
-		padding: 0.5rem 1.5rem;
+		margin: 0rem 0.5rem;
+		text-transform: uppercase;
 }
 
 button:hover {
-		text-decoration: underline;
-		font-size: 1.1rem;
+		border-bottom: 2px solid red;
 		cursor: pointer;
+		padding-bottom: 4px;
 }
 
 .title {
