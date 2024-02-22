@@ -24,5 +24,5 @@ aboutButton.addEventListener('click', e => {
 		About();
 		console.log("Hello About");
 });
-About();
+Home();
 

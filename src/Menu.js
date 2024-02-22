@@ -9,26 +9,30 @@ function createMenuItem(itemContents, item, container){
 		menuTitle.textContent = item;
 
 		for(let item of itemContents){
-			const itemContainer = createElem("div", ["item-container-div"], contentContainer);
-			const itemTitle = createElem("h3", ["item-title"], itemContainer);
-			itemTitle.textContent = item.title;
+				const itemContainer = createElem("div", ["item-container-div"], contentContainer);
+				const itemTitle = createElem("h3", ["item-title"], itemContainer);
+				itemTitle.textContent = item.title;
 
-			const itemDescription = createElem("p",["item-desc"], itemContainer);
-			itemDescription.textContent = item.desc;
+				const itemDescription = createElem("p",["item-desc"], itemContainer);
+				itemDescription.textContent = item.desc;
 
-			const itemPrice = createElem("h4", ["item-price"], itemContainer);
-			itemPrice.textContent = `$ ${(item.price).toFixed(2)}`;
+				const itemPrice = createElem("h4", ["item-price"], itemContainer);
+				itemPrice.textContent = `$ ${(item.price).toFixed(2)}`;
+				
+				const itemDivider = createElem("hr", ["item-divider"], itemContainer);
+
 
 		}
 
 }
 export default function(){
 		const titleDiv = createElem("div", ["title-div"], content);
+		content.classList.add("menu");
 		const title = createElem("h1",["title"],titleDiv);
-		title.textContent = "Grazie Caffe Menu";
+		title.textContent = "Menu";
 
 		const menuItemContainer = createElem("div", ["menu-container-div"], content);
-		
+
 		for(let item in menuItems){
 				createMenuItem(menuItems[item],item, menuItemContainer);
 		}

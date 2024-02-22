@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Merienda:wght@300..900&display=swap');
+
 :root, * {
+		font-family: "Merienda", "Georgia", sans-serif, serif;
+		font-weight: 400;
+		font-style: normal;
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
+		background-color: #FFF9FA;
 }
 
 #app {
@@ -16,9 +22,21 @@ header {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin: 1rem;
+		width: 100vw;
+		padding: 1rem 1rem 1.5rem 1rem;
 }
-
+header,
+header>*,
+footer,
+footer>* {
+		background-color: #FFC4CA;
+}
+footer {
+		padding: 1rem;
+		width: 100vw;
+		text-align: center;
+		color: red
+}
 nav {
 		display: flex;
 		justify-content: center;
@@ -26,6 +44,9 @@ nav {
 }
 ol {
 		list-style: none;
+}
+.hour {
+		padding: 0.2rem;
 }
 #content {
 		text-align: center;
@@ -47,6 +68,7 @@ ol {
 .subtitle {
 		color: #FF7F7F;
 		font-size: 2.3rem;
+		padding: 0.8rem;
 }
 .menu-container-div{
 		display: flex;

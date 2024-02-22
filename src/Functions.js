@@ -15,6 +15,7 @@ export function createElem(elem = "div", classNames = [], parentElem = null){
 }
 
 export function resetContent(){
+		content.className = "";
 		content.replaceChildren(); //reset all
 }
 
